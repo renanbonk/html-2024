@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(76, 152, 125);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="https://logodownload.org/wp-content/uploads/2018/03/webmotors-logo-0.png" alt="Logo" width="170"
+            height="140">
+
+    </div>
+    <form method="get" action="get">
+        <div>
+            <h4>Marcas</h4>
+            <label for="Campo-Filtro-Marcas"></label>
+            <select name="FiltroMarcas" id="Campo-Filtro-Marcas" required>
+
+                <optgroup label="Selecione a marca">
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Hyundai ">Hyundai </option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="Renault">Renault</option>
+                    <option value="">Volkswagen</option>
+                    <option value="Ford">Ford</option>
+                </optgroup>
+            </select>
+        
+        </div>
+        <div>
+            <h4>Carroceria</h4>
+            <label for="Campo-Carroceria"></label>
+            <select name="Carroceria" id="Campo-Carroceria" required>
+
+                <optgroup label="Selecione Carroceria">
+                    <option value="Suv">Suv</option>
+                    <option value="Hatchback">Hatchback </option>
+                    <option value="Sedã">Sedã</option>
+                    <option value="Picape">Picape</option>
+                    <option value="Minivan">Minivan</option>
+                    <option value="Conversível">Conversível</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <h4>Carros</h4>
+            <input type="radio" id="Campo-Novo">
+            <label for="Campo-Novo">Novo</label>
+            <input type="radio" id="Campo-Usado">
+            <label for="Campo-Usado">Usado</label>
+        </div>
+
+        <div>
+            <h4>Ano</h4>
+            <label for="Campo-Ano-inicial">de</label>
+            <select name="Campo-Ano-inicial" id="Campo-Ano-inicial" required>
+                <optgroup label="Selecione o Ano">
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                    <option value="2009">2009</option>
+                    <option value="2008">2008</option>
+                    <option value="2007">2007</option>
+                    <option value="2006">2006</option>
+                    <option value="2005">2005</option>
+
+                </optgroup>
+            </select>
+
+            <label for="Campo-Ano-Final">Até</label>
+            <select name="Campo-Ano-Final" id="Campo-Ano-Final" required>
+                <optgroup label="Selecione o Ano">
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                    <option value="2009">2009</option>
+                    <option value="2008">2008</option>
+                    <option value="2007">2007</option>
+                    <option value="2006">2006</option>
+                    <option value="2005">2005</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <h4>Opicionais</h4>
+            <input type="checkbox" id="Campo-Ar-condicionado" required>
+            <label for="Campo-Ar-condicionado">Ar condicionado</label>
+        </div>
+        <div>
+            <input type="checkbox" id="Campo-Vidros-eletricos" required>
+            <label for="Campo-Vidrose-eltricos">Vidros elétricos</label>
+        </div>
+        <div>
+            <input type="checkbox" id="Campo-Bancos-travas" required>
+            <label for="Campo-Bancos-travas">Travas</label>
+        </div>
+        <div>
+            <input type="checkbox" id="Campo-Bancos-de-couro" required>
+            <label for="Campo-Bancos-de-couro">Bancos de couro</label>
+        </div>
+        <div>
+            <input type="checkbox" id="Campo-GPS" required>
+            <label for="Campo-GPS">GPS</label>
+        </div>
+        <div>
+            <input type="checkbox" id="Campo-Camera" required>
+            <label for="Campo-Camera">Câmera de ré</label>
+        </div>
+        <div>
+            <input type="checkbox" id="Campo-Sensores-de-estacionamento" required>
+            <label for="Campo-Sensores-de-estacionamento">Sensores de estacionamento</label>
+        </div>
+        <div>
+            <input type="checkbox" id="Campo-Teto-solar" required>
+            <label for="Campo-Teto-solar">Teto solar</label>
+        </div>
+        <div>
+            <input type="checkbox" id="Campo-Sistema-de-frenagem-automática-de-emergência" required>
+            <label for="Campo-Sistema-de-frenagem-automática-de-emergência">Sistema de frenagem automática de
+                emergência</label>
+        </div>
+        <div>
+            <h4>Cor</h4>
+            <label for="Campo-Cores"></label>
+            <select name="Cores" id="Campo-Cores" required>
+                <optgroup label="Selecione a Cor">
+                    <option value="Preto">Preto</option>
+                    <option value="Branco">Branco</option>
+                    <option value="Azul">Azul</option>
+                    <option value="Prata">Prata</option>
+                    <option value="Vermelho">Vermelho</option>
+                </optgroup>
+            </select>
+        </div>
+    </form>
+
+    <div>
+        <h1><button type="">Pesquisar</button></h1>
+        <h4>Detalhes</h4>
+        <table width="600" cellpadding="5" cellSpacing="2" border="1">
+            <thead>
+                <tr>
+                    <th>imagem</th>
+                    <th>marca</th>
+                    <th>Modelo</th>
+                    <th>Carroceria</th>
+                    <th>Novo/Usado</th>
+                    <th>Ano</th>
+                    <th>Para mais Detalhes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://bocamafrapremium.com.br/wp-content/uploads/2023/09/ac974163bec24085814c687618f29591_1675184621743.jpg"
+                            alt="BMW-320i" width="200" height="150"></td>
+                    <td>BMW</td>
+                    <td>320i</td>
+                    <td>Sedã</td>
+                    <td>Novo</td>
+                    <td>2024</td>
+                    <td><a href="320i.html">Clique aqui</a></td>
+                </tr>
+                <tr>
+                    <td><img src="https://bocamafrapremium.com.br/wp-content/uploads/2024/02/4352e427e285441b824ec531fe5f959c_1698778533223.jpg"
+                            alt="BMW-X6" width="200" height="150">></td>
+                    <td>BMW</td>
+                    <td>X6</td>
+                    <td>Suv</td>
+                    <td>Novo</td>
+                    <td>2024</td>
+                    <td><a href="X6.html">Clique aqui</a></td>
+                </tr>
+                <tr>
+                    <td><img src="https://img.olx.com.br/images/62/624414034603681.jpg" alt="Ranger" width="200"
+                            height="150"></td>
+                    <td>Ford</td>
+                    <td>Ranger</td>
+                    <td>Picape</td>
+                    <td>Usado</td>
+                    <td>2020</td>
+                    <td><a href="Ranger.html">Clique aqui</a></td>
+                </tr>
+                <tr>
+                    <td><img src="https://img1.icarros.com/dbimg/imgadicionalanuncio/5/357714393_1.webp" alt="Polo"
+                            width="200" height="150"></td>
+                    <td>Volkswagen</td>
+                    <td>Polo</td>
+                    <td>Hatchback</td>
+                    <td>Novo</td>
+                    <td>2023</td>
+                    <td><a href="Polo.html">Clique aqui</a></td>
+                </tr>
+                <tr>
+                    <td><img src="https://cdn.motor1.com/images/mgl/zx907W/s4/nissan-kicks-exclusive-2024.webp"
+                            alt="nissan-kicks" width="200" height="150"></td>
+                    <td>Nissan</td>
+                    <td>KICKS</td>
+                    <td>Suv</td>
+                    <td>Novo</td>
+                    <td>2024</td>
+                    <td><a href="Kicks.html">Clique aqui</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+</body>
+
+</html>
